@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png">
+    <title>Jeux Olympiques Paris 2024</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+        <p class="titre" data-translate-key="welcome">Jeux Olympiques Paris 2024</p>
+        <div class="language-selector">
+            <label for="language">Langue:</label>
+            <select id="language" name="language" onchange="translatePage()">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="zh">中文 (Chinese)</option>
+                <option value="ko">한국어 (Korean)</option>
+                <option value="th">ไทย (Thai)</option>
+                <option value="ar">العربية (Arabic)</option>
+                <option value="pt">Português (Portuguese)</option>
+                <option value="hi">हिन्दी (Hindi)</option>
+            </select>
+        </div>
+    </header>
+    <nav class="nav">
+        <ul class="liste">
+            <li class="menu">
+                <a href="#" data-translate-key="team_france">L'équipe de France</a>
+                <ul class="sous-menu">
+                    <li><a href="olympique.html" data-translate-key="olympic">Olympique</a></li>
+                    <li><a href="paralympique.html" data-translate-key="paralympic">Paralympique</a></li>
+                </ul>
+            </li>
+            <li class="menu">
+                <a href="#" data-translate-key="torch_route">Parcours de la flamme</a>
+                <ul class="sous-menu">
+                    <li><a href="etape.html" data-translate-key="stages">Etapes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="timer">
+        <h1 data-translate-key="countdown_title">Compte à Rebours jusqu'aux Jeux Olympiques de Paris 2024</h1>
+        <div id="countdown" class="countdown"></div>
+    </div>
+    <aside>
+        <canvas id="flameCanvas"></canvas>
+    </aside>
+    <img id="torchImage" src="torche.png" alt="Torch Image">
+    <script src="script.js"></script>
+</body>
+</html>
